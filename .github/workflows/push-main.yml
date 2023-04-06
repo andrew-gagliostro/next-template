@@ -9,7 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-      # back as working directory.
         working-directory: back
     steps:
       - uses: actions/checkout@v2
@@ -29,6 +28,7 @@ jobs:
       - name: Deploy Pulumi Stack
         uses: pulumi/action-install-pulumi-cli@v1
       - run: npm install
+      - run: pwd
       - uses: pulumi/actions@v3
         with:
           command: up
