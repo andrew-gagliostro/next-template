@@ -1,5 +1,0 @@
-name: serverless-aws-react-saas
-runtime: nodejs
-description: A minimal AWS TypeScript Pulumi SaaS Setuppul
-config:
-  aws:region: us-east-1

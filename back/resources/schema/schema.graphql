@@ -1,8 +1,0 @@
-type Query {
-  getCognitoUser: CognitoUser
-}
-
-type CognitoUser {
-  id: ID!
-  username: String!
-}
