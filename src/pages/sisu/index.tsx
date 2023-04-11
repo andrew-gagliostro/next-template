@@ -35,7 +35,10 @@ function Index() {
     }, []);
 
 
-    return (<Authenticator></Authenticator>)
+    return (<div style={{
+        justifyContent: 'center',
+        alignContent: 'center'
+    }}><div><Authenticator></Authenticator></div></div>)
 }
 
 export default Index;

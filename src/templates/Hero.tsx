@@ -14,7 +14,7 @@ import { AccountLinks } from '../navigation/AccountInfoSignInSignUp';
 function Hero() {
 
   return (
-    <Background color="bg-gray-100">
+    <Background color="bg-gray-300">
       <Section yPadding="py-6">
         <NavbarTwoColumns logo={<Logo xl />}>
           <li>
