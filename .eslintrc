@@ -1,0 +1,47 @@
+{
+  // Configuration for JavaScript files
+  "extends": [
+    "airbnb-base",
+    "next/core-web-vitals"
+  ],
+  "overrides": [
+    // Configuration for TypeScript files
+    {
+      "files": [
+        "**/*.ts",
+        "**/*.tsx"
+      ],
+      "plugins": [
+        "unused-imports"
+      ],
+      "extends": [
+        "airbnb-typescript"
+      ],
+      "parserOptions": {
+        "project": "./tsconfig.json"
+      },
+      "rules": {
+        "import/order": [
+          "error",
+          {
+            "groups": [
+              "builtin",
+              "external",
+              "internal"
+            ],
+            "pathGroups": [
+              {
+                "pattern": "react",
+                "group": "external",
+                "position": "before"
+              }
+            ],
+            "pathGroupsExcludedImportTypes": [
+              "react"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

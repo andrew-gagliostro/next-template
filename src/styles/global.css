@@ -1,0 +1,18 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+
+:root {
+    --amplify-primary-color: #a23511;
+    --amplify-primary-tint: #603f57;
+    --amplify-primary-shade: #b52dba;
+    --amplify-background-color: #e0faf4;
+}
