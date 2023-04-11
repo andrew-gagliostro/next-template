@@ -1,6 +1,8 @@
+/* eslint-disable */
 import { AppProps } from 'next/app';
 import { Amplify } from "aws-amplify";
 import '@aws-amplify/ui-react/styles.css'
+
 
 import '../styles/global.css';
 

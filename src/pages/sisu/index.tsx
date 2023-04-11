@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { Authenticator, withAuthenticator } from '@aws-amplify/ui-react';
 import { Auth, Hub } from 'aws-amplify';
 import React from 'react';
