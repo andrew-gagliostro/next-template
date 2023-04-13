@@ -23,7 +23,7 @@ function Hero() {
         </NavbarTwoColumns>
       </Section>
 
-      <Section yPadding="py-20">
+      <Section>
         <HeroOneButton
           title={
             <>
