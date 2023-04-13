@@ -17,12 +17,12 @@ const VerticalFeatures = () => (
       reverse
     />
     <VerticalFeatureRow
-      title="Document and post your recipes any other process you want to share"
+      title="Document and post your recipes or any other process you want to share"
       description="Whether you're a food blogger looking to share your recipes with your followers or a DIY enthusiast who wants to share your process with friends, MyLysts is the perfect tool for you"
     />
     <VerticalFeatureRow
       title="Discover the next addition to your lists"
-      description="Browse other users' public lists to discover new things to add to your own lists. Whether you're looking for new books to read, new restaurants to try, or new recipes to make, MyLysts has got you covered"
+      description="Browse other users' public lists to discover new things to add to your own lists. Whether you're looking for new books to read, new restaurants to try, or new recipes to make, find it on MyLysts"
     />
   </Section>
 );
