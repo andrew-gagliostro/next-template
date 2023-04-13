@@ -40,21 +40,16 @@ function Base() {
           <div className="antialiased text-gray-600">
             <Meta title={AppConfig.title} description={AppConfig.description} />
             <Background color="bg-gray-300">
-              <Section yPadding="py-6">
+              <Section>
                 <NavbarTwoColumns logo={<Logo xl />}>
-                  <li>
-                    {(user && user.attributes) && (
-                      <Link>
-                        <a>Hello {user.attributes.email}!</a>
-                      </Link>
-                    )}
-                  </li>
-                  <li>
-                    <AccountLinks />
-                  </li>
+                  {(user && user.attributes) && (
+                    <Link>
+                      <a>Hello {user.attributes.email}!</a>
+                    </Link>
+                  )}
+                  <AccountLinks />
                 </NavbarTwoColumns>
               </Section>
-
               <Section yPadding="py-20">
                 <HeroOneButton
                   title={

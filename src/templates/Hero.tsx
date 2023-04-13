@@ -17,11 +17,9 @@ function Hero() {
 
   return (
     <Background color="bg-gray-300">
-      <Section yPadding="py-6">
+      <Section>
         <NavbarTwoColumns logo={<Logo xl />}>
-          <li>
-            <AccountLinks />
-          </li>
+          <AccountLinks />
         </NavbarTwoColumns>
       </Section>
 

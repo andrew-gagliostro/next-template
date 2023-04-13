@@ -9,10 +9,9 @@ code {
         monospace;
 }
 
-
-:root {
-    --amplify-primary-color: #a23511;
-    --amplify-primary-tint: #603f57;
-    --amplify-primary-shade: #b52dba;
-    --amplify-background-color: #e0faf4;
+.bar {
+    width: 1.5rem;
+    height: 0.15rem;
+    background-color: rgb(228, 227, 227);
+    margin: 0.15rem 0.1rem;
 }
