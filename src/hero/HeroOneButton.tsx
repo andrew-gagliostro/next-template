@@ -3,7 +3,7 @@ import { ReactNode } from 'react';
 type IHeroOneButtonProps = {
   title: ReactNode;
   description?: string;
-  button: ReactNode;
+  button?: ReactNode;
 };
 
 const HeroOneButton = (props: IHeroOneButtonProps) => {
@@ -20,13 +20,22 @@ const HeroOneButton = (props: IHeroOneButtonProps) => {
       </header>
     );
   }
-  else {
+  else if (props.button) {
     return (
       <header className="text-center">
         <h1 className="text-5xl text-purple-900 font-bold whitespace-pre-line leading-hero pb-10">
           {props.title}
         </h1>
         {props.button}
+      </header>
+    );
+  }
+  else {
+    return (
+      <header className="text-center">
+        <h1 className="text-5xl text-purple-900 font-bold whitespace-pre-line leading-hero pb-10">
+          {props.title}
+        </h1>
       </header>
     );
   }

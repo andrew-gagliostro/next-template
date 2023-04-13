@@ -33,15 +33,17 @@ function AccountLinks() {
     }
     else {
         return (
-            <a>
-                <Button onClick={() => { router.push('/account') }}>
+            <a className="flex flex-wrap justify-between">
+                <Link href="/account">
                     <a>Account Info</a>
-                </Button>
-                <Button onClick={async () => {
-                    await Auth.signOut()
-                    router.push("/");
-                    setIsSignedIn(false)
-                }}><a>Sign Out</a></Button>
+                </Link>
+                <div className="pl-4">
+                    <div onClick={async () => {
+                        await Auth.signOut()
+                        router.push("/");
+                        setIsSignedIn(false)
+                    }}><a>Sign Out</a></div>
+                </div>
             </a>
         )
     }

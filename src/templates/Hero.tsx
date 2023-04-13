@@ -20,11 +20,6 @@ function Hero() {
       <Section yPadding="py-6">
         <NavbarTwoColumns logo={<Logo xl />}>
           <li>
-            <Link href="https://github.com/andrew-gagliostro/mylysts">
-              <a>GitHub</a>
-            </Link>
-          </li>
-          <li>
             <AccountLinks />
           </li>
         </NavbarTwoColumns>

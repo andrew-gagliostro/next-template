@@ -36,7 +36,7 @@ function Base() {
   return (
     <Authenticator>
       {({ signOut, user }) => (
-        <Background color="bg-violet-200">
+        <Background color="bg-gradient-to-b from-violet-200 to-violet-400">
           <div className="antialiased text-gray-600">
             <Meta title={AppConfig.title} description={AppConfig.description} />
             <Background color="bg-gray-300">
@@ -63,18 +63,10 @@ function Base() {
                       <span className="text-4xl text-purple-700">A simple and personalized way to keep track of your favorite products or services and share them with others</span>
                     </>
                   }
-                  button={
-                    <Link href="/sisu">
-                      <a color='purple'>
-                        <Button>Create An Account Now</Button>
-                      </a>
-                    </Link>
-                  }
                 />
               </Section>
             </Background>
             <VerticalFeatures />
-            <Banner />
             <Footer />
           </div>
         </Background>)}
