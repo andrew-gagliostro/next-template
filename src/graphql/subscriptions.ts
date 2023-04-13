@@ -103,6 +103,7 @@ export const onCreateUser = /* GraphQL */ `
     onCreateUser(filter: $filter, owner: $owner) {
       id
       username
+      user_email
       role
       privacy_status
       bio
@@ -123,6 +124,7 @@ export const onUpdateUser = /* GraphQL */ `
     onUpdateUser(filter: $filter, owner: $owner) {
       id
       username
+      user_email
       role
       privacy_status
       bio
@@ -143,6 +145,7 @@ export const onDeleteUser = /* GraphQL */ `
     onDeleteUser(filter: $filter, owner: $owner) {
       id
       username
+      user_email
       role
       privacy_status
       bio

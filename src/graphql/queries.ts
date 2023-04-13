@@ -163,6 +163,7 @@ export const getUser = /* GraphQL */ `
     getUser(id: $id) {
       id
       username
+      user_email
       role
       privacy_status
       bio
@@ -193,6 +194,7 @@ export const listUsers = /* GraphQL */ `
       items {
         id
         username
+        user_email
         role
         privacy_status
         bio
@@ -222,6 +224,7 @@ export const usersByUsername = /* GraphQL */ `
       items {
         id
         username
+        user_email
         role
         privacy_status
         bio

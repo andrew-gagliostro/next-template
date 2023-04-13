@@ -18,8 +18,9 @@ function AccountLinks() {
             } catch (err) {
                 setIsSignedIn(false);
             }
+            await Auth.currentAuthenticatedUser().then((user: any) => console.log(user.attributes.email));
+            console.log(isSignedIn)
         }
-
         checkAuthState();
     }, []);
 

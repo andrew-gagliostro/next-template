@@ -6,9 +6,11 @@ import { HeroOneButton } from '../hero/HeroOneButton';
 import { Section } from '../layout/Section';
 import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
 import { Logo } from './Logo';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { Auth } from 'aws-amplify';
 
 import { AccountLinks } from '../navigation/AccountInfoSignInSignUp';
+
 
 
 function Hero() {
@@ -28,19 +30,18 @@ function Hero() {
         </NavbarTwoColumns>
       </Section>
 
-      <Section yPadding="pt-20 pb-32">
+      <Section yPadding="py-20">
         <HeroOneButton
           title={
             <>
               {'Create, Rate, Categorize, and Share\n'}
-              <span className="text-purple-700">A simple and personalized way to keep track of your favorite products or services and share them with others</span>
+              <span className="text-4xl text-purple-700">A simple and personalized way to keep track of your favorite products or services and share them with others</span>
             </>
           }
-          description="The easiest way to track "
           button={
-            <Link href="https://creativedesignsguru.com/category/nextjs/">
-              <a className="text-purple-700" color='purple'>
-                <Button >Download Your Free Theme</Button>
+            <Link href="/sisu">
+              <a color='purple'>
+                <Button>Create An Account Now</Button>
               </a>
             </Link>
           }

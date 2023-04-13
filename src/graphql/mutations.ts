@@ -112,6 +112,7 @@ export const createUser = /* GraphQL */ `
     createUser(input: $input, condition: $condition) {
       id
       username
+      user_email
       role
       privacy_status
       bio
@@ -132,6 +133,7 @@ export const updateUser = /* GraphQL */ `
     updateUser(input: $input, condition: $condition) {
       id
       username
+      user_email
       role
       privacy_status
       bio
@@ -152,6 +154,7 @@ export const deleteUser = /* GraphQL */ `
     deleteUser(input: $input, condition: $condition) {
       id
       username
+      user_email
       role
       privacy_status
       bio

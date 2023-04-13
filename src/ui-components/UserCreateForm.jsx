@@ -30,11 +30,13 @@ export default function UserCreateForm(props) {
   } = props;
   const initialValues = {
     username: "",
+    user_email: "",
     role: "",
     privacy_status: "",
     bio: "",
   };
   const [username, setUsername] = React.useState(initialValues.username);
+  const [user_email, setUser_email] = React.useState(initialValues.user_email);
   const [role, setRole] = React.useState(initialValues.role);
   const [privacy_status, setPrivacy_status] = React.useState(
     initialValues.privacy_status
@@ -43,6 +45,7 @@ export default function UserCreateForm(props) {
   const [errors, setErrors] = React.useState({});
   const resetStateValues = () => {
     setUsername(initialValues.username);
+    setUser_email(initialValues.user_email);
     setRole(initialValues.role);
     setPrivacy_status(initialValues.privacy_status);
     setBio(initialValues.bio);
@@ -50,6 +53,7 @@ export default function UserCreateForm(props) {
   };
   const validations = {
     username: [{ type: "Required" }],
+    user_email: [{ type: "Required" }],
     role: [],
     privacy_status: [{ type: "Required" }],
     bio: [],
@@ -81,6 +85,7 @@ export default function UserCreateForm(props) {
         event.preventDefault();
         let modelFields = {
           username,
+          user_email,
           role,
           privacy_status,
           bio,
@@ -139,6 +144,7 @@ export default function UserCreateForm(props) {
           if (onChange) {
             const modelFields = {
               username: value,
+              user_email,
               role,
               privacy_status,
               bio,
@@ -157,6 +163,34 @@ export default function UserCreateForm(props) {
         {...getOverrideProps(overrides, "username")}
       ></TextField>
       <TextField
+        label="User email"
+        isRequired={true}
+        isReadOnly={false}
+        value={user_email}
+        onChange={(e) => {
+          let { value } = e.target;
+          if (onChange) {
+            const modelFields = {
+              username,
+              user_email: value,
+              role,
+              privacy_status,
+              bio,
+            };
+            const result = onChange(modelFields);
+            value = result?.user_email ?? value;
+          }
+          if (errors.user_email?.hasError) {
+            runValidationTasks("user_email", value);
+          }
+          setUser_email(value);
+        }}
+        onBlur={() => runValidationTasks("user_email", user_email)}
+        errorMessage={errors.user_email?.errorMessage}
+        hasError={errors.user_email?.hasError}
+        {...getOverrideProps(overrides, "user_email")}
+      ></TextField>
+      <TextField
         label="Role"
         isRequired={false}
         isReadOnly={false}
@@ -166,6 +200,7 @@ export default function UserCreateForm(props) {
           if (onChange) {
             const modelFields = {
               username,
+              user_email,
               role: value,
               privacy_status,
               bio,
@@ -193,6 +228,7 @@ export default function UserCreateForm(props) {
           if (onChange) {
             const modelFields = {
               username,
+              user_email,
               role,
               privacy_status: value,
               bio,
@@ -231,6 +267,7 @@ export default function UserCreateForm(props) {
           if (onChange) {
             const modelFields = {
               username,
+              user_email,
               role,
               privacy_status,
               bio: value,
