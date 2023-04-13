@@ -18,7 +18,7 @@ import { getUser } from '../../graphql/queries';
 
 function Base() {
 
-  let [user, setUser] = useState("")
+  let [user, setUser] = useState("null")
 
   useEffect(() => {
     async function getUser() {
@@ -43,9 +43,11 @@ function Base() {
               <Section yPadding="py-6">
                 <NavbarTwoColumns logo={<Logo xl />}>
                   <li>
-                    <Link>
-                      <a>Hello {user.attributes.email}!</a>
-                    </Link>
+                    {(user && user.attributes) && (
+                      <Link>
+                        <a>Hello {user.attributes.email}!</a>
+                      </Link>
+                    )}
                   </li>
                   <li>
                     <AccountLinks />

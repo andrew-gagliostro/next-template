@@ -27,7 +27,7 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
       {(props.image && props.imageAlt) && (
         <div className={verticalFeatureClass}>
           <div className="w-full text-center sm:px-6">
-            <h3 className="text-3xl text-purple-800 font-semibold">{props.title}</h3>
+            <h3 style={{ fontSize: 2 + 'em' }} className="text-purple-800 font-semibold">{props.title}</h3>
             <div className="max-w-screen-lg mx-auto pb-auto pt-auto flex">
               <img className="object-scale-down h-40 w-full" src={`${router.basePath}${props.image}`} alt={props.imageAlt} />
             </div>
