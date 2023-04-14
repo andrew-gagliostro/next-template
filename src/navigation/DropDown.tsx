@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import { Button } from '@aws-amplify/ui-react';
 
-function AccountLinks() {
+function DropDown() {
     let [isSignedIn, setIsSignedIn] = useState(false);
     const [isOpen, setIsOpen] = useState(false)
     const router = useRouter();
@@ -54,8 +54,8 @@ function AccountLinks() {
         )
     }
     return (
-        <div className="relative object-center">
-            <button className="object-center text-white bg-violet-500 px-2 py-2 rounded-sm object-right w-1/10"
+        <div className="relative">
+            <button className="object-center text-white bg-purple-700 px-1.5 pt-1 pb-1 rounded-md"
                 onClick={() => setIsOpen(!isOpen)}>
                 <div className="object-center">
                     <div className="bar"></div>
@@ -75,4 +75,4 @@ function AccountLinks() {
 
 }
 
-export { AccountLinks };
+export { DropDown };

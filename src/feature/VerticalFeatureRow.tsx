@@ -29,9 +29,9 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
           <div className="w-full text-center sm:px-6">
             <h3 style={{ fontSize: 2 + 'em' }} className="text-violet-800 font-bold">{props.title}</h3>
             <div className="max-w-screen-lg mx-auto pb-auto pt-auto flex">
-              <img className="object-scale-down w-full h-20" src={`${router.basePath}${props.image}`} alt={props.imageAlt} />
+              <img className="object-scale-down w-full h-20 mt-2" src={`${router.basePath}${props.image}`} alt={props.imageAlt} />
             </div>
-            <div className="mt-6 text-xl text-violet-700 font-bold leading-9">{props.description}</div>
+            <div className="mt-3 text-xl text-violet-700 font-bold leading-9">{props.description}</div>
           </div>
         </div>
       )}

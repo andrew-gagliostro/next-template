@@ -9,7 +9,7 @@ import { Section } from '../../layout/Section';
 import { NavbarTwoColumns } from '../../navigation/NavbarTwoColumns';
 import { Authenticator, Link } from '@aws-amplify/ui-react';
 import { HeroOneButton } from '../../hero/HeroOneButton';
-import { AccountLinks } from '../../navigation/AccountInfoSignInSignUp';
+import { AccountLinks } from '../../navigation/DropDown';
 import { Button } from '../../button/Button';
 import { Logo } from '../Logo';
 import { useEffect, useState } from 'react';

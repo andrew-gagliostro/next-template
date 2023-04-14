@@ -9,7 +9,7 @@ import { Logo } from './Logo';
 import React, { useEffect, useState } from 'react';
 import { Auth } from 'aws-amplify';
 
-import { AccountLinks } from '../navigation/AccountInfoSignInSignUp';
+import { DropDown } from '../navigation/DropDown';
 
 
 
@@ -19,7 +19,7 @@ function Hero() {
     <Background color="bg-gray-300">
       <Section>
         <NavbarTwoColumns logo={<Logo xl />}>
-          <AccountLinks />
+          <DropDown />
         </NavbarTwoColumns>
       </Section>
 
