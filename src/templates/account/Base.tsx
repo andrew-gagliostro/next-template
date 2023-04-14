@@ -9,7 +9,7 @@ import { Section } from '../../layout/Section';
 import { NavbarTwoColumns } from '../../navigation/NavbarTwoColumns';
 import { Authenticator, Link } from '@aws-amplify/ui-react';
 import { HeroOneButton } from '../../hero/HeroOneButton';
-import { AccountLinks } from '../../navigation/DropDown';
+import { DropDown } from '../../navigation/DropDown';
 import { Button } from '../../button/Button';
 import { Logo } from '../Logo';
 import { useEffect, useState } from 'react';
@@ -36,7 +36,7 @@ function Base() {
   return (
     <Authenticator>
       {({ signOut, user }) => (
-        <Background color="bg-gradient-to-b from-violet-200 to-violet-400">
+        <Background color="bg-gradient-to-b from-violet-300 to-violet-400">
           <div className="antialiased text-gray-600">
             <Meta title={AppConfig.title} description={AppConfig.description} />
             <Background color="bg-gray-300">
@@ -47,7 +47,7 @@ function Base() {
                       <a>Hello {user.attributes.email}!</a>
                     </Link>
                   )}
-                  <AccountLinks />
+                  <DropDown />
                 </NavbarTwoColumns>
               </Section>
               <Section yPadding="py-20">

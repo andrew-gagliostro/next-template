@@ -16,7 +16,7 @@ import { DropDown } from '../navigation/DropDown';
 function Hero() {
 
   return (
-    <Background color="bg-gray-300">
+    <Background color="bg-gradient-to-b from-gray-400 to-violet-200">
       <Section>
         <NavbarTwoColumns logo={<Logo xl />}>
           <DropDown />
