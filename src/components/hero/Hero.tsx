@@ -34,7 +34,7 @@ function Hero() {
       <NavBar />
       {user ? (
         <div className="text-center lg:mt-1 dark:invert flex flex-col items-center justify-between box-border">
-          <div className="text-7xl font-bold text-gray-500 backdrop-blur-2xl pb-1 mb-1 z-10">
+          <div className="text-7xl font-bold text-gray-500 pb-1 mb-1 z-10">
             MyLysts
           </div>
           <div className="text-6xl font-bold rotating-text pb-10 min-h-fit">

@@ -18,18 +18,6 @@ export function NavbarTwoColumns(props: INavbarProps) {
       <div className="flex items-center justify-center opacity-60">
         {props.children}
       </div>
-
-      <style jsx>
-        {`
-          .navbar :global(li:not(:first-child)) {
-            @apply mt-0;
-          }
-
-          .navbar :global(li:not(:last-child)) {
-            @apply mr-5;
-          }
-        `}
-      </style>
     </h1>
   );
 }
