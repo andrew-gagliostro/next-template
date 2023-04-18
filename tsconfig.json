@@ -1,47 +1,24 @@
 {
   "compilerOptions": {
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "target": "es5",
+    "outDir": "out",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": false,
+    "noEmit": false,
+    "esModuleInterop": true,
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "removeComments": true,
-    "preserveConstEnums": true,
-    "strict": false,
-    "alwaysStrict": false,
-    "strictNullChecks": false,
-    "noUncheckedIndexedAccess": false,
-    "noImplicitAny": false,
-    "noImplicitReturns": false,
-    "noImplicitThis": false,
-    "noUnusedLocals": false,
-    "noUnusedParameters": false,
-    "allowUnreachableCode": false,
-    "noFallthroughCasesInSwitch": true,
-    "target": "es5",
-    "outDir": "out",
-    "declaration": true,
-    "sourceMap": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "allowJs": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": false,
-    "jsx": "preserve",
-    "noEmit": true,
     "isolatedModules": true,
-    "incremental": true
+    "jsx": "preserve",
+    "incremental": true,
+    "paths": {
+      "@/*": ["./src/*"]
+    }
   },
-  "exclude": [
-    "./out/**/*",
-    "./node_modules/**/*"
-  ],
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx"
-  ]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules", "./out/**/*"]
 }

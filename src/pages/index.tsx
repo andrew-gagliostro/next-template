@@ -1,19 +1,21 @@
-import { API, Auth, Hub, graphqlOperation } from 'aws-amplify';
-import { Base } from '../templates/Base';
-import { createUser } from '../graphql/mutations';
+import Image from "next/image";
 
-Hub.listen('auth', async (data) => {
-    const event = data.payload.event;
-    console.log('event:', event);
+import React, { Component } from "react";
+import HomeLinks from "@/components/layout/HomeLinks";
+import { Hero } from "@/components/hero/Hero";
+import { Typography } from "@material-ui/core";
+import { NavbarTwoColumns } from "@/components/navigation/NavbarTwoColumns";
+import { DropDown } from "@/components/navigation/DropDown";
+import { Logo } from "@/components/hero/Logo";
+import { NavBar } from "@/components/navigation/NavBar";
+import { Footer } from "@/components/layout/Footer";
 
-    if (event === 'confirmSignUp') {
-        const user = await Auth.currentAuthenticatedUser();
-
-        let data = await API.graphql(graphqlOperation(createUser, { input: { user_email: user.attributes.email } }));
-        console.log(data)
-    }
-});
-
-const Index = () => <Base />;
-
-export default Index;
+export default function Home() {
+  return (
+    <main className="flex min-h-screen flex-col justify-between items-center">
+      <Hero />
+      <HomeLinks></HomeLinks>
+      <Footer></Footer>
+    </main>
+  );
+}
