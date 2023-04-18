@@ -20,9 +20,9 @@ function DropDown() {
         setUser(user);
         console.log(user);
         setLinks(
-          <a className="flex flex-col text-center min-w-fit text-gray-500">
+          <a className="flex flex-col text-center min-w-fit text-gray-600">
             <div
-              className="rounded-lg border border-gray-500 dark:hover:bg-gray-300 min-w-fit"
+              className="rounded-lg border border-gray-600 dark:hover:bg-gray-300 min-w-fit"
               onClick={async () => {
                 "/account" != router.pathname
                   ? router.replace("/account")
@@ -32,7 +32,7 @@ function DropDown() {
               Account Info
             </div>
             <div
-              className="rounded-lg border border-gray-500 dark:hover:bg-gray-300 min-w-fit"
+              className="rounded-lg border border-gray-600 dark:hover:bg-gray-300 min-w-fit"
               onClick={async () => {
                 await Auth.signOut();
                 router.reload();
@@ -47,7 +47,7 @@ function DropDown() {
         setUser(null);
         setLinks(
           <div
-            className="text-center text-gray-600 rounded-lg border border-gray-500 dark:hover:bg-gray-300 min-w-fit"
+            className="text-center text-gray-600 rounded-lg border border-gray-600 dark:hover:bg-gray-300 min-w-fit"
             onClick={async () => {
               router.push("/sisu");
             }}
