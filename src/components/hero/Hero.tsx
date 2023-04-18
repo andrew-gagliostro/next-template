@@ -47,7 +47,7 @@ function Hero() {
         </div>
       ) : (
         <div className="text-center lg:mt-1 dark:invert flex flex-col items-center justify-between box-border px-3 pb-10">
-          <div className="text-7xl font-bold text-gray-500 backdrop-blur-2xl pb-1 mb-10">
+          <div className="text-7xl font-bold text-gray-500 pb-1 mb-10">
             MyLysts
           </div>
           <div className="text-6xl font-bold rotating-text pb-10 min-h-fit">
