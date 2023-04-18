@@ -20,7 +20,7 @@ function DropDown() {
         setUser(user);
         console.log(user);
         setLinks(
-          <a className="min-w-fit">
+          <a className="flex min-w-fit text-gray-1000">
             <div
               className="hover:bg-violet-300 min-w-fit"
               onClick={async () => {
@@ -46,16 +46,14 @@ function DropDown() {
       } catch {
         setUser(null);
         setLinks(
-          <a className="text-center min-w-fit">
-            <div
-              className="hover:bg-violet-300 min-w-fit"
-              onClick={async () => {
-                router.push("/sisu");
-              }}
-            >
-              Sign In/Sign Up
-            </div>
-          </a>
+          <div
+            className="z-50 static min-w-40 max-w-50 text-gray-900 text-center"
+            onClick={async () => {
+              router.push("/sisu");
+            }}
+          >
+            Sign In/Sign Up
+          </div>
         );
       }
     };
@@ -68,7 +66,7 @@ function DropDown() {
   }, []);
 
   return (
-    <div className="relative">
+    <div className="relative flex w-full">
       <button
         className="object-center min-w-fit text-black px-auto pt-3 rounded-md"
         onClick={() => setIsOpen(!isOpen)}
@@ -80,12 +78,12 @@ function DropDown() {
         </div>
       </button>
       {isOpen && (
-        <div className="absolute right-0 top-10 mx-2 my-5 text-gray-100 opacity-60 bg-gray-600 rounded-lg border border-transparent">
+        <div className="absolute right-0 top-10 mt-2 w-48 rounded-md shadow-lg ring-1 ring-black ring-opacity-5">
           <div
+            className="py-1"
             role="menu"
             aria-orientation="vertical"
             aria-labelledby="options-menu"
-            className="min-w-fit"
           >
             {links}
           </div>
