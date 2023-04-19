@@ -1,4 +1,3 @@
-/* tslint:disable */
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
@@ -164,10 +163,20 @@ export const getUser = /* GraphQL */ `
       id
       username
       user_email
-      role
+      profile_photo
       privacy_status
       bio
       lists {
+        items {
+          id
+          title
+          description
+          image
+          status
+          user_id
+          createdAt
+          updatedAt
+        }
         nextToken
       }
       createdAt
@@ -195,9 +204,12 @@ export const listUsers = /* GraphQL */ `
         id
         username
         user_email
-        role
+        profile_photo
         privacy_status
         bio
+        lists {
+          nextToken
+        }
         createdAt
         updatedAt
         owner
@@ -225,9 +237,12 @@ export const usersByUsername = /* GraphQL */ `
         id
         username
         user_email
-        role
+        profile_photo
         privacy_status
         bio
+        lists {
+          nextToken
+        }
         createdAt
         updatedAt
         owner
@@ -246,6 +261,17 @@ export const getList = /* GraphQL */ `
       status
       user_id
       items {
+        items {
+          id
+          title
+          description
+          hyperlink
+          rating
+          image
+          list_id
+          createdAt
+          updatedAt
+        }
         nextToken
       }
       createdAt
@@ -275,6 +301,9 @@ export const listLists = /* GraphQL */ `
         image
         status
         user_id
+        items {
+          nextToken
+        }
         createdAt
         updatedAt
       }
@@ -304,6 +333,9 @@ export const listsByUser_id = /* GraphQL */ `
         image
         status
         user_id
+        items {
+          nextToken
+        }
         createdAt
         updatedAt
       }

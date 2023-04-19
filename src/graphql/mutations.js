@@ -1,4 +1,3 @@
-/* tslint:disable */
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
@@ -113,10 +112,20 @@ export const createUser = /* GraphQL */ `
       id
       username
       user_email
-      role
+      profile_photo
       privacy_status
       bio
       lists {
+        items {
+          id
+          title
+          description
+          image
+          status
+          user_id
+          createdAt
+          updatedAt
+        }
         nextToken
       }
       createdAt
@@ -134,10 +143,20 @@ export const updateUser = /* GraphQL */ `
       id
       username
       user_email
-      role
+      profile_photo
       privacy_status
       bio
       lists {
+        items {
+          id
+          title
+          description
+          image
+          status
+          user_id
+          createdAt
+          updatedAt
+        }
         nextToken
       }
       createdAt
@@ -155,10 +174,20 @@ export const deleteUser = /* GraphQL */ `
       id
       username
       user_email
-      role
+      profile_photo
       privacy_status
       bio
       lists {
+        items {
+          id
+          title
+          description
+          image
+          status
+          user_id
+          createdAt
+          updatedAt
+        }
         nextToken
       }
       createdAt
@@ -180,6 +209,17 @@ export const createList = /* GraphQL */ `
       status
       user_id
       items {
+        items {
+          id
+          title
+          description
+          hyperlink
+          rating
+          image
+          list_id
+          createdAt
+          updatedAt
+        }
         nextToken
       }
       createdAt
@@ -200,6 +240,17 @@ export const updateList = /* GraphQL */ `
       status
       user_id
       items {
+        items {
+          id
+          title
+          description
+          hyperlink
+          rating
+          image
+          list_id
+          createdAt
+          updatedAt
+        }
         nextToken
       }
       createdAt
@@ -220,6 +271,17 @@ export const deleteList = /* GraphQL */ `
       status
       user_id
       items {
+        items {
+          id
+          title
+          description
+          hyperlink
+          rating
+          image
+          list_id
+          createdAt
+          updatedAt
+        }
         nextToken
       }
       createdAt
