@@ -8,6 +8,7 @@ import { Amplify } from "aws-amplify";
 
 import awsconfig from "../aws-exports";
 import "@/styles/globals.css";
+import "@aws-amplify/ui-react/styles.css";
 
 Amplify.configure({ ...awsconfig, ssr: true });
 
