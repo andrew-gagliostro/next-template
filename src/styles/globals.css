@@ -29,7 +29,7 @@ body {
   min-height: 60vh;
 }
 
-.rotating-text {
+/* .rotating-text {
   background: linear-gradient(
     to right,
     #f69220,
@@ -41,8 +41,8 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: rotating 15s linear infinite;
-}
-/* .rotating-text {
+} */
+.rotating-text {
   background: linear-gradient(
     to right,
     #471aa1,
@@ -54,7 +54,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: rotating 6s linear infinite;
-} */
+}
 
 @keyframes rotating {
   0% {
