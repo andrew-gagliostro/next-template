@@ -8,7 +8,7 @@ type IButtonProps = {
 
 const Button = (props: IButtonProps) => {
   return (
-    <div className="px-2 py-2 mx-2 my-5 text-gray-100 opacity-60 bg-gray-600 rounded-lg border border-transparent">
+    <div className="px-2 py-2 mx-2 my-5 text-gray-100 opacity-60 bg-gray-600 hover:bg-gray-800 rounded-lg border border-transparent">
       {props.children}
 
       <style jsx>

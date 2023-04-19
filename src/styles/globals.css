@@ -25,6 +25,10 @@ body {
   );
 }
 
+.hero {
+  min-height: 60vh;
+}
+
 .rotating-text {
   background: linear-gradient(
     to right,

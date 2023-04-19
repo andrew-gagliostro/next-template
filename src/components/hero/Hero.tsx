@@ -30,10 +30,10 @@ function Hero() {
   });
 
   return (
-    <div className="box-border min-h-full">
+    <>
       <NavBar />
       {user ? (
-        <div className="text-center lg:mt-1 dark:invert flex flex-col items-center justify-between box-border">
+        <div className="text-center hero lg:mt-1 dark:invert flex flex-col items-center justify-between box-border">
           <div className="text-7xl font-bold text-gray-500 pb-1 mb-1 z-10">
             MyLysts
           </div>
@@ -46,14 +46,15 @@ function Hero() {
           </h2>
         </div>
       ) : (
-        <div className="text-center lg:mt-1 dark:invert flex flex-col items-center justify-between box-border px-3 pb-10">
-          <div className="text-7xl font-bold text-gray-500 pb-1 mb-10">
+        <div className="text-center hero lg:mt-1 dark:invert flex flex-col items-center justify-around box-border px-3 pb-10">
+          <div className="text-7xl font-bold text-gray-500 mb-10">
             MyLysts
+            <div className="text-6xl font-bold rotating-text pb-10 pt-4 min-h-fit">
+              Create. Connect. Style. Share.
+            </div>
           </div>
-          <div className="text-6xl font-bold rotating-text pb-10 min-h-fit">
-            Create. Connect. Style. Share.
-          </div>
-          <h2 className="text-2xl font-semibold ">
+
+          <h2 className="text-2xl font-semibold pb-5">
             A simple and personalized way to keep track of your favorite
             products or services and share them with others
           </h2>
@@ -66,7 +67,7 @@ function Hero() {
           </a>
         </div>
       )}
-    </div>
+    </>
   );
 }
 
