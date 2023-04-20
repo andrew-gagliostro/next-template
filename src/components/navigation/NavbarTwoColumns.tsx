@@ -14,7 +14,9 @@ export function NavbarTwoColumns(props: INavbarProps) {
 
   return (
     <h1 className="flex flex-full w-full justify-between dark:invert">
-      <Logo></Logo>
+      <div onClick={() => router.push("/")}>
+        <Logo></Logo>
+      </div>
       <div className="flex items-center justify-center opacity-60">
         {props.children}
       </div>

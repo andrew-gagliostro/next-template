@@ -5,7 +5,7 @@ import HomeLinks from "@/components/layout/HomeLinks";
 import { Hero } from "@/components/hero/Hero";
 import { Typography } from "@material-ui/core";
 import { NavbarTwoColumns } from "@/components/navigation/NavbarTwoColumns";
-import { DropDown } from "@/components/navigation/DropDown";
+import { DropDown } from "@/components/hero/DropDown";
 import { Logo } from "@/components/hero/Logo";
 import { NavBar } from "@/components/navigation/NavBar";
 import { Footer } from "@/components/layout/Footer";

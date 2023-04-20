@@ -1,5 +1,5 @@
 import { Logo } from "../hero/Logo";
-import { DropDown } from "./DropDown";
+import { DropDown } from "../hero/DropDown";
 import { NavbarTwoColumns } from "./NavbarTwoColumns";
 
 export function NavBar() {
