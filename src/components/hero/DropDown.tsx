@@ -5,12 +5,13 @@ import React from "react";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { Button } from "@aws-amplify/ui-react";
+import { useUser } from "@/context/AuthContext";
 
 function DropDown() {
   const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
 
-  const [user, setUser] = useState(null);
+  const { user, setUser } = useUser();
   const [links, setLinks] = useState(<div></div>);
 
   useEffect(() => {

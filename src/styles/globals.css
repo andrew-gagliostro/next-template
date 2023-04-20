@@ -76,3 +76,15 @@ body {
 .simple {
   text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.4);
 }
+
+.amplify-button[data-variation="primary"] {
+  background: linear-gradient(
+    to right,
+    #471aa1,
+    #7c48ff,
+    #7c5fff,
+    #5646ff,
+    #2f74ff
+  );
+  animation: rotating 15s linear infinite;
+}
