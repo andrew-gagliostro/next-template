@@ -5,7 +5,7 @@ import { useUser } from "@/context/AuthContext";
 import { User } from "@/models";
 
 export default function Home() {
-  const { user, setUser, cognitoUser, setCognitoUser } = useUser();
+  const { user, setUser } = useUser();
 
   const router = useRouter();
 }
