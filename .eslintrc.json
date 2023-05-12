@@ -21,6 +21,6 @@
     "no-unused-vars": "off",
     "new-cap": "off",
     "react/no-unknown-property": "off",
-    "spaced-comment": "off"
+    "spaced-comment": "off" 
   }
 }
